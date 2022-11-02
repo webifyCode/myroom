@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="room.css">
+  <link rel="stylesheet" href="roomlarge.css">
+
+  <script src="jquery.min.js"></script>
+
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+
+      <nav>
+
+        <input type="checkbox" name="" id="openMenu" checked>
+
+        <label for="openMenu" class="hamburger">
+          <img src="images/icon-hamburger.svg" alt="">
+        </label>
+
+        <ul class="navList">
+          <label for="openMenu" class="close"><img src="images\icon-close.svg" alt=""></label>
+          <li><a>Home</a></li>
+          <li><a>Shop</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+
+        <div class="overlay"></div>
+
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+      <div id="top">
+
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+
+
+        <div id="discover">
+
+          <div class="image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/desktop-image-hero-1.jpg">
+              <img src="images/mobile-image-hero-1.jpg" alt="">
+            </picture>
+
+            <div class="controls">
+              <label for="slide3">
+              <img class="left" src="images/icon-angle-left.svg" alt=""></label>
+            
+              <label for="slide2">
+              <img class="right" src="images/icon-angle-right.svg" alt=""></label>
+            </div>
+
+          </div>
+
+          <div class="text">
+
+            <h1>Discover innovative ways to decorate</h1>
+
+            <p> We provide unmatched quality, comfort, and style for property owners across the country.
+              Our experts combine form and function in bringing your vision to life. Create a room in your
+              own style with our collection and make your property a reflection of you and what you love.</p>
+
+            <div class="shop">Shop now <img src="images/icon-arrow.svg" alt=""></div>
+
+          </div>
+
+        </div>
+
+        <div id="available">
+
+          <div class="image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/desktop-image-hero-2.jpg">
+              <img src="images/mobile-image-hero-2.jpg" alt="">
+            </picture>
+
+            <div class="controls">
+              <label for="slide1">
+              <img class="left" src="images/icon-angle-left.svg" alt=""></label>
+
+              <label for="slide3">
+              <img class="right" src="images/icon-angle-right.svg" alt=""></label>
+            </div>
+          </div>
+
+          <div class="text">
+
+            <h1>We are available all across the globe</h1>
+
+            <p>With stores all over the world, it's easy for you to find furniture for your home or place of business.
+              Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+              store locator. Any questions? Don't hesitate to contact us today.</p>
+
+            <div class="shop">Shop now <img src="images/icon-arrow.svg" alt=""></div>
+
+          </div>
+
+        </div>
+
+        <div id="manufacture">
+
+          <div class="image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/desktop-image-hero-3.jpg">
+              <img src="images/mobile-image-hero-3.jpg" alt="">
+            </picture>
+
+            <div class="controls">
+              <label for="slide2">
+              <img class="left" src="images/icon-angle-left.svg" alt=""></label>
+
+              <label for="slide1">
+              <img class="right" src="images/icon-angle-right.svg" alt=""></label>
+            </div>
+          </div>
+
+          <div class="text">
+
+            <h1>Manufactured with the best materials</h1>
+
+            <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced
+              technology
+              to ensure that every product is made as perfect and as consistent as possible. With three decades of
+              experience in this industry, we understand what customers want for their home and office.</p>
+
+            <div class="shop">Shop now <img src="images/icon-arrow.svg" alt=""></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="about">
+
+        <div class="image">
+          <img src="images/image-about-dark.jpg" alt="">
+        </div>
+
+        <div class="text">
+
+          <h5>ABOUT OUR FURNITURE</h5>
+
+          <p>Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+
+        </div>
+
+        <div id="aboutLight" class="image">
+          <img src="images/image-about-light.jpg" alt="">
+        </div>
+
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="www.github.com/5erious5am">Samuel Akinode</a>.
+  </div>
+
+  <script src="room.js"></script>
+</body>
+
+</html>

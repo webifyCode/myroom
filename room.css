@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('https://fonts.google.com/specimen/League+Spartan');
+}
+
+body {
+    margin: 0;
+    font-family: 'League Spartan';
+    z-index: 1;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    z-index: 1;
+}
+
+nav {
+    padding: 3em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navList {
+    background-color: white;
+    width: -webkit-fill-available;
+    height: 83px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    transition: all 400ms ease;
+    transform: translateX(0px);
+    opacity: 1;
+    z-index: 5;
+}
+
+.navList li {
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.navList li a {
+    display: inline-block;
+    padding: 0.2em;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 0%;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: all 200ms ease 50ms;
+}
+
+.navList li a:hover { 
+    background-size: 50% 10%;
+}
+
+.hamburger, .close, .navList li a {
+    cursor: pointer;
+}
+
+.hamburger:after {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(8, 8, 8);
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.445);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 1;
+    visibility: visible;
+    transition: all 500ms ease 50ms;
+}
+
+#openMenu {
+    display: none;
+}
+
+#openMenu:checked ~ .navList {
+    transform: translateX(-1000px);
+    opacity: 0;
+}
+
+#openMenu:checked ~ .overlay {
+    opacity: 0;
+    z-index: -5;
+    visibility: hidden;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+main {
+    width: -webkit-fill-available;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#discover, #available, #manufacture {
+    transform: translateX(100vw);
+    width: 100vw;
+    transition: all 200ms ease ;
+}
+
+#slide1:checked ~ #discover {
+    transform: translateX(0px);  
+}
+
+#slide2:checked ~ #available {
+    transform: translateX(-100vw);
+}
+
+#slide3:checked ~ #manufacture {
+    transform: translateX(-200vw);
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    background-color: black;
+}
+
+.controls img {
+    width: unset;
+    padding: 1em 1.3em;
+    cursor: pointer;
+    height: 16px;
+}
+
+.controls, .controls label {
+    transition: all 200ms ease 50ms;
+}
+
+.controls label {
+    background: black;
+}
+
+.controls:hover, .controls label:hover {
+    background: rgb(41, 41, 41);
+}
+
+.text {
+    padding: 0 2em 2em 2em;
+}
+
+p {
+    line-height: 1.5em;
+    color: grey;
+    font-size: 12px;
+}
+
+.shop {
+    margin: 2em 0;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    cursor: pointer; 
+    transition: all 200ms ease 50ms;
+}
+
+.shop:hover {
+    opacity: 0.55;
+}
+
+#manufacture, #available {
+   
+}
+
+#about h5 {
+    letter-spacing: 0.2em;
+    padding-top: 2em;
+}
